@@ -1,0 +1,28 @@
+// Responsive font variables
+$font-size-unit: 0.125rem
+$max-font-size-level: 36
+$min-font-size-level: 7
+
+// Custom color variables
+$primary:   #AA0601
+$secondary: #650300
+$tertiary:  #AA06010D
+$gray: #DEE2E6
+$theme-colors: ( "tertiary": $tertiary, "gray": $gray )
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap')
+$font-family-base: 'Noto Sans TC', sans-serif
+
+// Custom position variables
+$positions: static, relative, absolute, fixed, sticky, initial
+
+
+// Custom grid variables
+$grid-breakpoints: ( xss: 0px, xs: 375px, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+$container-max-widths: ( xs: 345px, sm: 540px, md: 720px, lg: 960px, xl: 1140px )
+
+$spacer: .5rem
+$min-spacer-level: 1
+$max-spacer-level: 40
+$spacers: create-spacer-map()
