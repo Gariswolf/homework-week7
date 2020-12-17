@@ -6,13 +6,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-	<%- include('../component/nav'); %>
-  <%- contents %>
-	<%- include('../component/footer'); %>
+	<%- include('component/nav.ejs') %>
+
+	<div class="d-flex flex-column border-top border-tertiary">
+		<div class="d-flex">
+			<div class="intro-item d-flex justify-content-end align-items-center">
+				<div class="w-70" data-aos="fade-right" data-aos-duration="800">
+					<h2 class="font-weight-bold fz-48 mb-12">Single Speed,<br>Single Life.</h2>
+					<p class="intro-text fz-12 mb-4">More recently the “fixie” has become a popular alternative among mainly urban cyclists, offering the advantage of simplicity compared with the standard multi-geared bicycle.</p>
+					<a href="#" class="btn border border-tertiary bg-gray px-13 py-4">Shop Now</a>
+				</div>
+			</div>
+			<div class="intro-item d-flex flex-column">
+				<img src="assets/images/img1.jpg" alt="Img_1" class="w-100 flex-grow-1" data-aos="fade-left" data-aos-duration="8000">
+				<div class="d-flex">
+					<div class="d-flex">
+						<a href="#" class="p-9 border border-tertiary">
+							<span class="material-icons fz-24">keyboard_arrow_left</span>
+						</a>
+						<a href="#" class="p-9 border border-tertiary">
+							<span class="material-icons fz-24">keyboard_arrow_right</span>
+						</a>
+					</div>
+					<h3 class="d-flex align-items-center flex-grow-1 px-12 border border-tertiary">Collection 001-xx</h3>
+				</div>
+			</div>
+		</div>
+	
+		<div class="d-flex flex-row-reverse">
+			<div class="intro-item position-relative d-flex flex-column-reverse justify-content-between pt-24 pb-48 pl-34 pr-24">
+				<h2 class="align-self-end text-right font-weight-bold" data-aos="fade-left" data-aos-duration="800">One Gear,<br>Many Variations</h2>
+				<p class="intro-text" data-aos="fade-left" data-aos-duration="800">A fixed gear drivetrain is more mechanically efficient than any other bicycle drivetrain, with the most direct power transfer from rider to the wheels. Thus, it requires less energy in any given gear to move than a geared bike in the same gear.</p>
+				<a href="#" class="bg-black intro-link-center-left p-6">
+					<span class="material-icons fz-8 text-white">arrow_forward</span>
+				</a>				
+			</div>
+			<div class="intro-item position-relative" >
+				<img src="assets/images/img2.jpg" alt="Img_2" class="wh-100" data-aos="fade-right" data-aos-duration="800">
+				<a href="#" class="bg-white p-4 intro-link-center-right fz-12 border-top border-bottom border-black border-thick">Read More</a>
+			</div>
+		</div>
+
+		<div class="d-flex">
+			<div class="intro-item position-relative d-flex flex-column justify-content-between pt-48 pb-24 pl-24 pr-34">
+				<h2 class="font-weight-bold" data-aos="fade-right" data-aos-duration="800">Stripped-Down<br>Performance</h2>
+				<p class="intro-text text-right align-self-end" data-aos="fade-right" data-aos-duration="800">A fixed gear drivetrain is more mechanically efficient than any other bicycle drivetrain, with the most direct power transfer from rider to the wheels. Thus, it requires less energy in any given gear to move than a geared bike in the same gear.</p>
+				<a href="#" class="bg-black intro-link-center-right p-4 text-white fz-12 border-top border-bottom border-black border-thick">Read More</a>				
+			</div>
+			<div class="intro-item position-relative">
+				<img src="assets/images/img3.jpg" alt="Img_3" class="wh-100" data-aos="fade-left" data-aos-duration="800">
+				<a href="#" class="bg-white intro-link-center-left p-6">
+					<span class="material-icons fz-8 text-black">arrow_forward</span>
+				</a>	
+			</div>
+		</div>
+	</div>
+
+	<div class="py-24">
+		<div class="w-30 mx-auto text-center" data-aos="fade-up" data-aos-duration="400">
+			<h3 class="font-weight-bold mb-6 font-weight-bold font-italic">A collection built for regular commuters</h2>
+			<p class="intro-text">Riders unknown to each other commonly greet each other when on bikes. As in many subcultures, this feeling of belonging is a key factor in recruiting and retaining participants.</p>
+		</div>
+	</div>
+
+	<div class="position-relative">
+		<img src="assets/images/img4.jpg" alt="Img_4" class="wh-100 img-custom position-absolute z-n1" data-aos="fade-up" data-aos-duration="800">
+		<div class="container pt-106 pb-19">
+			<div class="p-3 bg-white intro-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+				<p class="fz-12 text-black font-italic font-weight-bold">&quot; I like to ride. Fixed gear.No brakes.<br>Can’t stop. Don’t want to, either.&quot;</p>
+				<p>Premium Rush (2012)</p>
+			</div>
+		</div>
+	</div>
+
+	<ul class="container py-24 list-unstyled d-flex justify-content-between">
+		<li class="intro-card mr-7" data-aos="fade-up" data-aos-duration="800">
+			<img src="assets/images/img5.jpg" alt="Img_5" class="intro-card-img mb-6">
+			<h4 class="mb-4">All who cycle are my friends</h4>
+			<p class="mb-4">2020.4.27</p>
+			<p>A rider from Stockholm interviewed for an article about the phenomenon notes that riding a bike imparts a feeling of freedom to the rider…</p>
+		</li>
+		<li class="intro-card mr-7" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+			<img src="assets/images/img6.jpg" alt="Img_6" class="intro-card-img mb-6">
+			<h4 class="mb-4">Swedish riders and enthusiasts</h4>
+			<p class="mb-4">2020.3.11</p>
+			<p>There are also several bicycle clubs throughout Sweden with a fixed-gear niche. Komet Club Rouler is a club based in Gothenburg, annually arranging Svart Kat…</p>
+		</li>
+		<li class="intro-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1600">
+			<img src="assets/images/img7.jpg" alt="Img_7" class="intro-card-img mb-6">
+			<h4 class="mb-4">The Australian fixie culture</h4>
+			<p class="mb-4">2020.2.29</p>
+			<p>Online stores in Australia ship partially-assembled bikes directly to consumers, considerably undercutting prices at typical brick and mortar stores…</p>
+		</li>
+	</ul>
+
+	<%- include('component/footer.ejs') %>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
 </body>
 
 </html>
